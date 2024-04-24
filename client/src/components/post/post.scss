@@ -1,0 +1,147 @@
+.post {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  position: relative; 
+  margin-bottom: -40px;
+  margin-top: 5px;
+}
+
+.grey-comment {
+  color: grey;
+}
+
+.green-comment {
+  color: rgb(36, 167, 36);
+}
+
+.grey-heart {
+  color: grey;
+}
+
+.liked-heart {
+  color: red;
+}
+
+.bookmark-icon{
+  color: gray;
+}
+
+.bookmark-icon.bookmarked {
+  color: rgb(63, 153, 255);
+}
+
+.container {
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .userInfo {
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        
+        .name {
+          font-size: 1em;
+          color: #333;
+          font-weight: bold;
+        }
+
+        .date {
+          color: #aaa;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  .content {
+    margin-bottom: 20px;
+
+    p {
+      word-wrap: break-word;
+      margin-bottom: -20px;
+      margin-top: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      resize: none;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    button {
+      padding: 8px 20px;
+      background-color: #4c9eeb;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #367bc3;
+    }
+  }
+
+  .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  
+    .item {
+      display: flex;
+      align-items: center;
+      
+      svg {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .post {
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .container .user {
+    .menuOpen {
+      top: 15px;
+      right: 10px;
+    }
+  }
+
+  .container .content img {
+    border-radius: 0;
+  }
+}
+

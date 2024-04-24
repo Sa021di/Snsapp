@@ -1,0 +1,26 @@
+.bot-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+
+  .MuiBottomNavigationAction-root {
+    max-width: none;
+  }
+
+  @media (max-width: 600px) {
+    .MuiBottomNavigationAction-label {
+      font-size: 0.7rem;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .MuiBottomNavigationAction-label {
+      font-size: 0.8rem;
+    }
+  }
+}

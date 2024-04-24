@@ -1,0 +1,85 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #d3dcfc;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+
+  h1 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.MuiTextField-root {
+  padding: 10px;
+  border-radius: 5px;
+  &:focus {
+    border-color: #0066ff;
+  }
+}
+
+.MuiTextField-root {
+  padding: 10px;
+  border-radius: 5px;
+  &:focus {
+    border-color: #0066ff;
+  }
+}
+
+.MuiIconButton-root {
+  position: absolute;
+  right: -15px;
+  z-index: 10;
+  color: #606060;
+}
+
+.create-account-button, .login-button {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  padding: 10px 0;
+
+  &:hover {
+    background-color: #0056e8;
+  }
+}
+
+.login {
+  text-align: center;
+  
+}
+
+@media (max-width: 768px) {
+  .register .card {
+    max-width: 95%;
+  }
+}

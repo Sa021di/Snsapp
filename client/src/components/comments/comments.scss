@@ -1,0 +1,161 @@
+@import "../../style.scss";
+
+.comments {
+  @include themify($themes) {
+    .writeComment {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background-color: themed("bg");
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-bottom: 20px;
+
+      .userImage {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .inputWrapper {
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        .commentInput {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 10px;
+          padding-right: 40px;
+          border-radius: 20px;
+          background-color: themed("bgSoft");
+        }
+
+        .charCounter {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #5b7083;
+          font-size: 0.875rem;
+          background: transparent;
+          pointer-events: none;
+        }
+      }
+
+      .sendButton {
+        padding: -10px;
+        margin-right: 30px;
+        border-radius: 50%;
+        background-color: #1DA1F2;
+        color: white;
+
+        &:hover {
+          background-color: #1681BF;
+        }
+
+        &:disabled {
+          background-color: #ffffff;
+          color: #BDBDBD;
+          cursor: not-allowed;
+        }
+      }
+    }
+
+    .commentContainer {
+      background-color: themed("bg");
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+
+      .commentHeader {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .userImage {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .commentInfo {
+          display: flex;
+          flex-direction: column;
+
+          .userName {
+            color: themed("textColor");
+            font-weight: bold;
+          }
+
+          .commentDate {
+            color: themed("textColorSoft");
+            font-size: 0.75rem;
+          }
+        }
+      }
+
+      .commentBody {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+
+        .commentText {
+          color: themed("textColor");
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+      }
+
+      .commentActions {
+        color: gray;
+        display: flex;
+        align-items: center;
+        gap: 10px;       
+
+        .actionIcon {
+          cursor: pointer;
+          color: themed("logo");
+
+          &.liked {
+            color: red;
+          }
+
+          &:hover {
+            color: darken(themed("logo"), 10%);
+          }
+        }
+
+        .likeCount {
+          color: themed("textColor");
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  @include mobile {
+    .comments {
+      .writeComment {
+        flex-direction: column;
+        align-items: stretch;
+        .userImage {
+          margin-bottom: 10px;
+        }
+        .commentInput {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

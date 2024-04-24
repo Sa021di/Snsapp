@@ -1,0 +1,109 @@
+.update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  .wrapper {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    h1 {
+      color: #333;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      .files {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      
+        .imgContainer {
+          position: relative;
+          cursor: pointer;
+          margin-bottom: 15px;
+      
+          img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #dbe2e8;
+          }
+      
+          .icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #fff;
+            border-radius: 50%;
+            padding: 5px;
+          }
+        }
+      }
+      
+
+      label {
+        font-size: 0.9rem;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"], input[type="password"] {
+        border: 1px solid #dbe2e8;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 0.9rem;
+      }
+
+      button {
+        background-color: #4c9eeb;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+
+        &:hover {
+          background-color: #367bc3;
+        }
+      }
+    }
+
+    .close {
+    
+      width: 100%;
+      display: block;
+      background-color: #fe3434;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      padding: 7px 15px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin-left: auto;
+
+      &:hover {
+        background-color: #ff0000;
+      }
+    }
+  }
+}

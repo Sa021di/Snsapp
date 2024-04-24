@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #ffffff !important;
+  
+  .navbar-link {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+
+    .navbar-avatar {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .navbar-name {
+      font-weight: bold;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
+    }
+  }
+
+  .MuiAppBar-root {
+    width: 100%;
+    left: 0;
+  }
+}
