@@ -34,6 +34,7 @@ Snsappは、人々がポストを交換するシンプルなTwitter（X）のバ
 
 
 ==========================================================
+
 Russian
 # SnsApp.
 
@@ -51,7 +52,7 @@ Snsapp - это простая версия Twitter (X), где люди обм�
 
 - **Front-end:** React, Material-UI, React Query.
 - **Бэкенд:** Node.js, Express.js, MySQL.
-- ** Развертывание:** - - -.
+- **Развертывание:** - - -.
 
 ## Как установить и запустить
 
@@ -60,7 +61,7 @@ Snsapp - это простая версия Twitter (X), где люди обм�
 Запустить проект: `npm start`.
 
 ## Демо.
-- [Figma](https://www.figma.com/file/miAyvOW6FDeVySyN3u5Nhj/Co-work-private-app?type=design&node-id=4%3A1224&mode=design&t=cu8uj7 gtCM5XANtE-1)
+- [Figma](https://www.figma.com/file/miAyvOW6FDeVySyN3u5Nhj/Co-work-private-app?type=design&node-id=4%3A1224&mode=design&t=cu8uj7gtCM5XANtE-1)
 - [WebSite](https://snsapp.uz/)
 
 ## Контакт.
